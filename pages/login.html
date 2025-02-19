@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMIQ</title>
+
+        <!-- link logo -->
+        <link rel="sortcut icon" href="/src/img/logo-homiq1.png" type="image/svg+xml">
+
+        <!-- link tailwindcss -->
+        <link rel="stylesheet" href="../src/output.css">
+
+        <!-- link font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,400;0,500;1,600&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <!-- link icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Breakrown -->
+    <div class="my-container py-4 flex items-center gap-2.5">
+        <a href="../index.html" class="text-sm text-gray-400">
+            <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a href="../index.html" class="text-gray-600 font-medium">Back</a>
+    </div>
+    <!-- End Breakrown -->
+
+    <!-- login -->
+    <div class="my-container py-14">
+        <div class="shadow py-7 px-6 max-w-lg mx-auto rounded overflow-hidden">
+            <h2 class="text-2xl font-medium uppercase mb-1">Login</h2>
+            <p class="text-gray-600 mb-6 text-sm">
+                Login if you are a returing customer
+            </p>
+
+            <form action="">
+                <div class="space-y-3">
+                    <div class="">
+                        <!-- <label for="email" class="text-gray-600 mb-2 block">Email address</label>
+                        <input type="email" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:outline-none focus:ring-1 focus:ring-primary"> -->
+
+                        <label for="email">
+                            <span class="block mb-1 font-semibold text-slate-700 after:content-['*'] after:text-red-600 after:ml-0.5">Email</span>
+                            <input type="email" id="email" placeholder="masukkan email.." class="px-3 py-2 border border-primary shadow rounded w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500 invalid:text-red-600 invalid:focus:ring-red-600 invalid:focus:border-red-600 peer">
+                            
+                            <p class="text-sm m-1 text-red-600 invisible peer-invalid:visible">Email tidak valid</p>
+                        </label>
+                    </div>
+                    <div class="">
+                        <label for="password">
+                            <span class="block mb-1 font-semibold text-slate-700 after:content-['*'] after:text-red-600 after:ml-0.5">Password</span>
+                            <input type="password" id="password" placeholder="masukkan password.." class="px-3 py-2 border border-primary shadow rounded w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500 invalid:text-red-600 invalid:focus:ring-red-600 invalid:focus:border-red-600 peer">
+                            
+                            <p class="text-sm m-1 text-red-600 invisible peer-invalid:visible">Email tidak valid</p>
+                        </label>
+                    </div>
+                </div>
+            </form>
+
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <input type="checkbox" id="remember" class="accent-primary focus:right-0 rounded-sm cursor-pointer">
+                    <label for="remember" class="ml-3 text-gray-600 cursor-pointer">Remember me</label>                
+                </div>
+                <a href="" class="text-sm text-primary hover:text-red-600">Forgot password?</a>
+            </div>
+
+            <div class="mt-2">
+                <a href="#" class="uppercase block text-center bg-primary  border border-primary text-white py-3 px-8 font-medium rounded-md ">Login</a>
+            </div>
+
+            <!-- dengan cara lain -->
+            <div class="mt-4 flex justify-center relative">
+                <div class="uppercase text-gray-600 bg-white px-3 z-10">or login with</div>
+                <div class="border-b-2 border-gray-300 w-full absolute top-3"></div>
+            </div>
+
+            <div class="flex space-x-4 mt-4">
+                <a href="#" class="w-full text-center shadow  border border-gray-400 text-gray-800 px-8 py-3 font-medium rounded-md hover:bg-gray-100">
+                    <i class="fa-brands fa-facebook mr-2 text-blue-600"></i>Facebook
+                </a>
+                <a href="#" class="w-full text-center shadow border border-gray-400 text-gray-800 px-8 py-3 font-medium rounded-md  hover:bg-gray-100 flex justify-center items-center">
+                    <img src="/src/img/google.png" alt="google" class="w-4 h-4 mr-2">Google
+                </a>
+            </div>
+            <!-- End Dengan cara lain -->
+
+            <!-- Register -->
+            <div class="flex justify-center space-x-1 mt-6">
+                <p class="text-sm text-gray-600">
+                    Don't have an account ?
+                </p>
+                <a href="" class="text-sm text-primary hover:text-red-600">Register Now</a>
+            </div>
+            <!-- End register -->
+
+        </div>
+    </div>
+    <!-- end login -->
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* configurasi */
+@theme {
+    --font-poppins: poppins , sans-serif;
+    --font-roboto: roboto , sans-serif;
+    --breakpoint-sm: '576px';
+    --breakpoint-md: '768px';
+    --breakpoint-lg: '992px';
+    --breakpoint-xl: '1200px';
+    --color-primary: #a5801e;
+}
+
+@layer base {
+    @apply font-poppins;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6
+
+}
+
+@layer components {
+    .my-container {
+        @apply mx-auto max-w-7xl px-4;
+    }
+
+    .size-selector input:checked + label {
+        @apply bg-primary text-white transition;
+    }
+
+    .color-selector input:checked + label {
+        @apply ring-2 ring-primary transition;
+    }
+
+}

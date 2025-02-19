@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMIQ</title>
+
+        <!-- link logo -->
+        <link rel="sortcut icon" href="/src/img/logo-homiq1.png" type="image/svg+xml">
+
+        <!-- link tailwindcss -->
+        <link rel="stylesheet" href="../src/output.css">
+
+        <!-- link font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,400;0,500;1,600&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <!-- link icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- header -->
+    <header class="py-4 shadow-sm bg-white">
+        <div class="my-container flex justify-between items-center ">
+            <!-- logo -->
+             <a href="">
+                <img src="/src/img/homiq.png" alt="logo" class="w-32">
+             </a>
+
+            <!-- searchbar -->
+             <div class="w-[470px] max-w-xl relative ">
+                <span class="absolute left-4 top-3 text-lg text-gray-400">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input type="text" placeholder="search" class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none ">
+                <button class="absolute bg-primary border border-primary text-white px-8 py-3 rounded-r-md hover:bg-transparent hover:text-primary hover:cursor-pointer transition focus:bg-amber-700 focus:text-white">Search</button>
+             </div>
+
+            <!-- icons -->
+            <div class="flex items-center space-x-4">
+                <a href="/pages/wishlist.html" class="text-center text-gray-700 hover:text-primary transition relative ">
+                    <div class="text-2xl">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="text-xs leading-3">Wish List</div>
+                    <span class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
+                </a>
+                <a href="/pages/checkout.html" class="text-center text-gray-700 hover:text-primary transition relative ">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="text-xs leading-3">Cart</div>
+                    <span class="absolute -right-2 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">6</span>
+                </a>
+                <a href="/pages/account.html" class="text-center text-gray-700 hover:text-primary transition relative ">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="text-xs leading-3">Profile</div>
+                    <!-- <span class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span> -->
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- navbar -->
+    <nav class="bg-gray-800">
+        <div class="my-container flex">
+
+            <!-- all category -->
+            <div class="relative px-8 py-4 bg-primary flex items-center cursor-pointer group">
+                <span class="text-white">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <span class="capitalize ml-2 text-white">All Categories</span>
+
+                <!-- categorys dropdown -->
+                <div class="absolute w-full bg-white shadow-md  left-0 top-full divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+                    <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
+                        <img src="/src/img/sofa.png" alt="" class="w-5 h-5 object-contain">
+                        <span class="ml-5 text-gray-600 text-base">Sofa</span>
+                    </a>
+                    <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
+                        <img src="/src/img/double-bed.png" alt="" class="w-5 h-5 object-contain">
+                        <span class="ml-5 text-gray-600 text-base">Double Bed</span>
+                    </a>
+                    <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
+                        <img src="/src/img/office-chair.png" alt="" class="w-5 h-5 object-contain">
+                        <span class="ml-5 text-gray-600 text-base">Swivel Chair</span>
+                    </a>
+                    <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
+                        <img src="/src/img/desk.png" alt="" class="w-5 h-5 object-contain">
+                        <span class="ml-5 text-gray-600 text-base">Table</span>
+                    </a>
+                </div>
+            </div>
+            <!-- End all category -->
+
+            <!-- Navbar Links -->
+            <div class="flex items-center justify-between flex-grow pl-12">
+                <div class="flex items-center space-x-6 capitalize">
+                    <a href="../index.html" class="text-gray-200 hover:text-primary hover:font-semibold transition">Home</a>
+                    <a href="./shop.html" class="text-gray-200 hover:text-primary hover:font-semibold transition">Shop</a>
+                    <a href="#" class="text-gray-200 hover:text-primary hover:font-semibold transition">About Us</a>
+                    <a href="#" class="text-gray-200 hover:text-primary hover:font-semibold transition">Contact Us</a>
+                </div>
+                <div class="flex">
+                    <a href="/pages/login.html" class="bg-primary py-4 px-8 text-white transition hover:bg-amber-700">Login</a>
+                    <a href="#" class=" py-4 px-6 text-white transition hover:bg-amber-700">Register</a>
+                </div>
+            </div>
+            <!-- End Navbar Links -->
+
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- Breakrown -->
+    <div class="my-container py-4 flex items-center gap-2.5">
+        <a href="../index.html" class="text-primary text-base">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <span class="text-sm text-gray-400">
+            <i class="fa-solid fa-chevron-right"></i>
+        </span>
+        <p class="text-gray-600 font-medium">Profile</p>
+    </div>
+    <!-- End Breakrown -->
+
+    <!-- Start Account -->
+    <div class="my-container grid grid-cols-12 gap-6 pt-4 pb-16 items-start">
+
+
+        <!-- sidebar -->
+        <div class="col-span-3">
+
+            
+            <!-- account profile -->
+            <div class="shadow px-4 py-3 flex items-center gap-3">
+                <div class="shrink-0">
+                    <img src="/src/img/avatar.jpg" alt="" class="w-14 h-14 rounded-full border border-gray-200">
+                </div>
+                <div class="grow">
+                    <p class="text-gray-600">Hello,</p>
+                    <h4 class="text-gray-600 font-medium">Adam</h4>
+                </div>
+            </div>
+            
+            <!-- account links -->
+            <div class="mt-6 bg-white shadow rounded p-4 divide-y divide-gray-200 space-y-4 text-gray-600">
+                
+                <!-- single link -->
+                <div class="space-y-1 pl-8 pb-4">
+                    <a href="" class="relative text-primary block font-medium capitalize">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="far fa-address-card"></i>
+                        </span>
+                        Manage Account
+                    </a>
+                    <a href="" class="relative hover:text-primary block font-medium capitalize transition">
+                        Profile Information
+                    </a>
+                    <a href="" class="relative hover:text-primary block font-medium capitalize transition">
+                        Manage address
+                    </a>
+                    <a href="" class="relative hover:text-primary block font-medium capitalize transition">
+                        Change Password
+                    </a>
+                </div>
+                <!-- end single link -->
+                <!-- single link -->
+                <div class="space-y-1 pl-8 pb-4">
+                    <a href="" class="relative text-gray-800 block font-medium capitalize">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="fa-solid fa-gift"></i>
+                        </span>
+                        My order history
+                    </a>
+                    <a href="" class="relative hover:text-primary block font-medium capitalize transition">
+                        My returns
+                    </a>
+                    <a href="" class="relative hover:text-primary block font-medium capitalize transition">
+                        My Concellations
+                    </a>
+                    <a href="" class="relative hover:text-primary block font-medium capitalize transition">
+                        My reviews
+                    </a>
+                </div>
+                <!-- end single link -->
+                <!-- single link -->
+                <div class="space-y-1 pl-8 pb-4">
+                    <a href="" class="relative text-gray-800 block font-medium capitalize">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="fa-regular fa-credit-card"></i>
+                        </span>
+                        Payment Methods
+                    </a>
+                    <a href="" class="relative hover:text-primary block font-medium capitalize transition">
+                        Voucher
+                    </a>
+                </div>
+                <!-- end single link -->
+                <!-- single link -->
+                <div class="space-y-1 pl-8 pb-4">
+                    <a href="" class="relative text-gray-800 block font-medium capitalize">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        My Wishlist
+                    </a>
+                </div>
+                <!-- end single link -->
+                <!-- single link -->
+                <div class="space-y-1 pl-8 pb-4">
+                    <a href="" class="relative text-gray-800 block font-medium capitalize">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                        </span>
+                        Logout
+                    </a>
+                </div>
+                <!-- end single link -->
+
+            </div>
+
+        </div>
+        <!-- end sidebar -->
+
+
+        <!-- Profile info -->
+        <div class="col-span-9">
+            <div class="bg-white shadow-lg rounded p-6 border border-gray-200">
+                <h2 class="text-xl font-semibold">Profile Information</h2>
+                <div class="mt-6">
+                    <!-- singgle input -->
+                   
+                        <div class="flex items-center justify-between gap-6">
+                           
+                            <div class="w-full">
+                                <label for="first-name">
+                                    <span class="mt-1 block text-md mb-2 text-gray-600">First Name</span>
+                                    <input type="input-box" id="first-name" placeholder="Adam" class="px-4 py-3 border rounded-md w-full block border-gray-300 text-sm focus:outline-none focus:ring-primary focus:border-primary invalid:text-red-600 invalid:focus:ring-red-600 invalid:focus:border-red-600 peer">
+                   
+                                    <p class="text-sm m-1 text-red-600 invisible peer-invalid:visible">Email tidak valid</p>
+                                </label>
+                            </div>
+                     
+                            <div class="w-full">
+                                <label for="last-name">
+                                    <span class="mt-1 block text-md mb-2 text-gray-600">Last Name</span>
+                                    <input type="text" id="last-name" placeholder="Al Damir" class="px-4 py-3 border border-gray-300 rounded-md w-full block text-sm focus:outline-none focus:ring-primary focus:border-primary invalid:text-red-600 invalid:focus:ring-red-600 invalid:focus:border-red-600 peer">
+                   
+                                    <p class="text-sm m-1 text-red-600 invisible peer-invalid:visible">Email tidak valid</p>
+                                </label>
+                            </div>
+                        </div>
+                   
+                    <!-- end singgle input -->
+                    <!-- singgle input -->
+                    <div class="flex items-center justify-between gap-6">
+                        <div class="w-full">
+                            <label for="first-name">
+                                <span class="mt-1 block text-md mb-2 text-gray-600">Birthday</span>
+                                <input type="date" id="first-name" placeholder="Husain" class="px-4 py-3 border rounded-md w-full block border-gray-300 text-sm focus:outline-none focus:ring-primary focus:border-primary invalid:text-red-600 invalid:focus:ring-red-600 invalid:focus:border-red-600 peer">
+               
+                                <p class="text-sm m-1 text-red-600 invisible peer-invalid:visible">Email tidak valid</p>
+                            </label>
+                        </div>
+                        <div class="w-full">
+                            <label for="last-name">
+                                <span class="mt-1 block text-md mb-2 text-gray-600">Gender</span>
+                                <select name="gender" class="p-1 px-4 py-3 border border-gray-300 rounded-md w-full block text-sm focus:outline-none focus:ring-primary focus:border-primary">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                                <p class="text-sm m-1 text-red-600 invisible peer-invalid:visible">Email tidak valid</p>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- end singgle input -->
+                    <!-- singgle input -->
+                    <div class="flex items-center justify-between gap-6">
+                        <div class="w-full">
+                            <label for="first-name">
+                                <span class="mt-1 block text-md mb-2 text-gray-600">Email Address</span>
+                                <input type="email" id="first-name" placeholder="homiq@gmail.com" class="px-4 py-3 border rounded-md w-full block border-gray-300 text-sm focus:outline-none focus:ring-primary focus:border-primary invalid:text-red-600 invalid:focus:ring-red-600 invalid:focus:border-red-600 peer">
+               
+                                <p class="text-sm m-1 text-red-600 invisible peer-invalid:visible">Email tidak valid</p>
+                            </label>
+                        </div>
+                        <div class="w-full">
+                            <label for="last-name">
+                                <span class="mt-1 block text-md mb-2 text-gray-600">Phone Number</span>
+                                <input type="tel" id="last-name" placeholder="+123 456 7890" class="px-4 py-3 border border-gray-300 rounded-md w-full block text-sm focus:outline-none focus:ring-primary focus:border-primary invalid:text-red-600 invalid:focus:ring-red-600 invalid:focus:border-red-600 peer">
+               
+                                <p class="text-sm m-1 text-red-600 invisible peer-invalid:visible">Email tidak valid</p>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- end singgle input -->
+
+
+                    <!-- button -->
+                    <div class="mt-2">
+                        <a href="#" class="block w-52 text-center shadow bg-primary border border-primary text-white px-6 py-3 font-medium rounded-md hover:bg-transparent hover:text-primary transition">
+                            Save Changes
+                        </a>
+                    </div>
+                    <!-- end button -->
+                </div>
+            </div>
+        </div>
+        <!-- end profile info -->
+    </div>
+    <!-- End Account -->
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 ">
+        <div class="container mx-auto flex  justify-between px-8">
+          <!-- Logo & About -->
+          <div class="w-full md:w-1/4">
+            <h2 class="text-2xl font-bold">HOMIQ</h2>
+            <p class="mt-3 text-gray-400">Your one-stop shop for all your needs. Quality products at unbeatable prices.</p>
+            <div class="mt-4 flex space-x-3">
+              <a href="#" class="text-gray-400 hover:text-primary"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-gray-400 hover:text-primary"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-gray-400 hover:text-primary"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          
+          <!-- Quick Links -->
+          <div class="w-full md:w-1/4">
+            <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-400 hover:text-primary">Home</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-primary">Shop</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-primary">About Us</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-primary">Contact</a></li>
+            </ul>
+          </div>
+          
+          <!-- Customer Service -->
+          <div class="w-full md:w-1/4">
+            <h3 class="text-lg font-semibold mb-4">Customer Service</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-400 hover:text-primary">FAQ</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-primary">Shipping & Returns</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-primary">Privacy Policy</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-primary">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          
+          <!-- Newsletter -->
+          <div class="w-full md:w-1/4">
+            <h3 class="text-lg font-semibold mb-4">Subscribe to Our Newsletter</h3>
+            <p class="text-gray-400">Stay updated with the latest deals and offers.</p>
+            <form class="mt-4 flex">
+              <input type="email" placeholder="Enter your email" class="px-4 py-1 rounded-l-lg focus:outline-none border border-primary">
+              <button class="bg-primary px-5 py-3 rounded-r-lg hover:bg-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        
+        <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
+          <p>&copy; 2025 HOMIQ. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    
+</body>
+</html>
