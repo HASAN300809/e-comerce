@@ -462,7 +462,6 @@
   }
   img, svg, video, canvas, audio, iframe, embed, object {
     display: block;
-    vertical-align: middle;
   }
   img, video {
     max-width: 100%;
@@ -821,11 +820,10 @@
   .box-content {
     box-sizing: content-box;
   }
-  .line-clamp-none {
+   .line-clamp-none {
     overflow: visible;
     display: block;
     -webkit-box-orient: horizontal;
-    -webkit-line-clamp: unset;
   }
   .block {
     display: block;
@@ -2698,9 +2696,6 @@
   .forced-color-adjust-none {
     forced-color-adjust: none;
   }
-  .\[keywords\:node-addon-api\] {
-    keywords: node-addon-api;
-  }
   .backface-hidden {
     backface-visibility: hidden;
   }
@@ -3033,8 +3028,12 @@
   }
 }
 @layer base {
-  font-family: var(--font-poppins);
-  h1, h2, h3, h4, h5, h6: h1, h2, h3, h4, h5, h6;
+  body {
+    font-family: var(--font-poppins);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-roboto);
+  }
 }
 @layer components {
   .my-container {
